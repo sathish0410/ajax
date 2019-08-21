@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="process.js"></script>
+</head>
+
+<body>
+  <h1>Register Page</h1>
+  <form method="post" name='register'>
+    <label for="name">Name</label><input type="text" id="name" name="name" onkeypress="return onlychar(event)" required>
+    <label for="email">E-mail</label><input type="email" id="email" name="email" required>
+    <label for="password">Password</label><input type="password" name="password" pattern="(?=.*\d)(?=.*[@$!%*#?&])[a-z\d@$!%*#?&].{6,}" title="must contain number and special character with min 6 character" id="password" required>
+    <button type="submit">register</button>
+    <a href="login">login</a>
+  </form>
+</body>
+
+</html>

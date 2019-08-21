@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="process.js"></script>
+</head>
+
+<body name="home">
+  <form name="home">
+    <h1>welcome to home</h1>
+    <button type="button" id="logout" onclick="logout()"> Logout </button>
+    <table id="table">
+      <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Owner</th>
+        <th>Product Owner Id</th>
+        <th>Product Url</th>
+        <th>edit</th>
+        <th>delete</th>
+        <button type="submit" name="add_product"> Add Product </button>
+      </tr>
+      <!-- <%=docs[1].product_id%>
+    <% for(var i = 0;docs.length>i;i++){%>
+    <tr>
+      <td><%=docs[i].product_id%></td>
+      <td><%=docs[i].product_name%></td>
+      <td><%=docs[i].product_owner%></td>
+      <td><%=docs[i].product_owner_id%></td>
+      <td><%=docs[i].product_url%></td>
+    </tr>
+    <%}%> -->
+
+    </table>
+  </form>
+</body>
+
+</html>

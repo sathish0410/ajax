@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <title>Login</title> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="process.js"></script>
+</head>
+
+<body>
+  <h1>Login page</h1>
+  <form method="post" name='login'>
+    <label for="email">E-mail</label><input type="email" id="email" name='email' required>
+    <label for="password">Password</label><input type="password" name='password' pattern="(?=.*\d)(?=.*[@$!%*#?&])[a-z\d@$!%*#?&].{6,}" title="must contain number and special character with min 6 character" id="password" required>
+    <!-- <button type="button" onclick="login()">login</button> -->
+    <button type="submit">login </button>
+    <a href="register">register</a>
+  </form>
+</body>
+
+</html>
